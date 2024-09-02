@@ -26,3 +26,4 @@
     print("Dictionary:", dictionary.token2id)
     print("BoW Vector 1:", bow_vector1)
     print("BoW Vector 2:", bow_vector2)
+#################################################
