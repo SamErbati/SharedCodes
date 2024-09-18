@@ -28,3 +28,21 @@
     print("BoW Vector 2:", bow_vector2)
 #################################################
 #################################################
+
+import requests
+
+def test_api():
+    url = 'https://jsonplaceholder.typicode.com/posts/1'  # Free API endpoint
+    try:
+        response = requests.get(url)
+        if response.status_code == 200:
+            print('API is working properly.')
+            print('Response Data:', response.json())
+        else:
+            print(f'API returned an unexpected status code: {response.status_code}')
+    except requests.exceptions.RequestException as e:
+        print('An error occurred while connecting to the API:', e)
+
+if __name__ == '__main__':
+    test_api()
+######################################################
