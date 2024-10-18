@@ -47,7 +47,4 @@ def test_api():
 if __name__ == '__main__':
     test_api()
 ######################################################
-from flask import Flask, request, render_template
-from flask_cors import CORS
-import json
-from transformers import AutoModelForSeq2SeqLM, AutoTokenizer
+
